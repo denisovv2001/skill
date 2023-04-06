@@ -6,7 +6,7 @@ int main()
 
     std::cout << "\nThursday\napril\nVasiliy\n\n";
 
-    ///ступеньки из нулей
+    ///steps of zeros
     int i = 0;
     int number = 0;
     while(i < 5)
@@ -21,7 +21,7 @@ int main()
         i++;
     }
 
-    ///прямоугольник
+    ///rectangle
     std::cout << std:: endl;
     char symbol = 'A';
     int hight = 5;
@@ -40,11 +40,48 @@ int main()
         j++;
     }
 
-    /*
-    1000001000001
-    0100010100010
-    0010100010100
-    0001000001000
-    */
+    ///drawing the `w` character from `*`
+    std::cout << std::endl;
+    int h = 13;
+    int w = 4;
+    int left = 0;
+    int centreleft = 6;
+    int centreright = 7;
+    int right = 12;
+    for(int i = 0; i < w; i++)
+    {
+        for(int j = 0; j < h; j++)
+        {
+            if(left == i && left == j)
+            {
+                std::cout << "*";
+                left++;
+            }
+            else if(centreleft == j)
+            {
+                std::cout << "*";
+                centreleft--;
+            }
+            else if(i > 0 && centreright == j && centreright == (i + 6))
+            {
+                std::cout << "*";
+                centreright++;
+            }
+            else if(right == j)
+            {
+                std::cout << "*";
+                right--;
+            }
+            else
+            {
+                std::cout << " ";
+            }
+        }
+        std::cout << std::endl;
+    }
+
+    std::cout << std::endl;
+    std::cout << "1 + 2 - 4 = " << 1+2-4 << std::endl;
+
     return 0;
 }

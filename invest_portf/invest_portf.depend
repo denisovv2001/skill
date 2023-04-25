@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1682382653 source:c:\users\girln\documents\w-oop\invest_portf\main.cpp
+	<iostream>
+	"InvestFund.h"
+	"CInvestment.h"
+
+1682381903 c:\users\girln\documents\w-oop\invest_portf\include\investfund.h
+	<list>
+
+1682015337 source:c:\users\girln\documents\w-oop\invest_portf\src\investfund.cpp
+	"InvestFund.h"
+	<iostream>
+
+1682362264 source:c:\users\girln\documents\w-oop\invest_portf\src\cinvestment.cpp
+	"CInvestment.h"
+
+1682382721 c:\users\girln\documents\w-oop\invest_portf\include\cinvestment.h
+	<iostream>
+	"InvestFund.h"
+
